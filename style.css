@@ -173,12 +173,14 @@ div.screen3-content {
 @media screen and (max-width: 992px) {
 
   div.screen2-content {       
-    min-height: 100vh;     
+    min-height: 100vh; 
+    padding-top: 50px;
   }
 
   .feature1, .feature2, .feature3 {
     display: block; 
     font-size: 12px;
+
   }
 
   .feature-imgs {
