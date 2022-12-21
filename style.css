@@ -1,0 +1,187 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.headline-hero {
+  font-size: 2.75rem;
+}
+
+.headline-text {
+  font-weight: bold;
+}
+
+.logo {
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 17px;
+  display: flex;
+  max-width: 1160px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
+
+.screen1 {
+  /* The image used */
+  background-image: url("img/villa1.webp");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.screen1-content {      
+  position: absolute;             
+  top: 50%;  
+  left: 50%;                      
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  min-width: 260px;
+  max-width: 700px;
+}
+
+input[type=text], input[type=email], input[type=submit]{
+  width: 45%;
+  min-width: 240px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+input[type=text], input[type=email] {
+  background-color: rgba(255,255,255,.4);
+}
+
+input[type=submit] {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.scroll-down {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
+.screen2 {
+  /* The image used */
+  background-image: url("img/villa2.webp");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.screen2-content {      
+  position: relative;  
+  display: table;           
+  top: 50%;  
+  left: 50%;                      
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.feature1, .feature2, .feature3 {
+  display: table-cell;
+  padding: 15px;
+  width: 200px;
+}
+
+.feature-headline {
+  font-weight: bold;
+}
+
+.screen3 {
+  /* The image used */
+  background-image: url("img/villa3.webp");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.screen3-content {
+  position: relative;  
+  display: inline-block; 
+  margin: 0 auto;       
+  top: 50%;  
+  left: 50%;                      
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  min-width: 260px;
+  max-width: 700px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .headline-hero {
+    font-size: 24px;
+  }
+
+  .headline-text {
+    font-size: 16px;
+  }
+
+  div.screen2-content {       
+    min-height: 100vh;     
+  }
+
+  .feature1, .feature2, .feature3 {
+    display: block; 
+    font-size: 12px;
+  }
+
+  .feature-imgs {
+    max-width: 30%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  div.screen2-content {       
+    min-height: 100vh;     
+  }
+
+  .feature1, .feature2, .feature3 {
+    display: block; 
+    font-size: 12px;
+  }
+
+  .feature-imgs {
+    max-width: 30%;
+  }
+}
